@@ -1,7 +1,7 @@
 
 
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3000/api/hello')
+  const res = await fetch('https://pdftesting-a0l489qs5-sujokum.vercel.app/api/hello')
   const repo = await res.json()
   return { props: { repo } }
 }
